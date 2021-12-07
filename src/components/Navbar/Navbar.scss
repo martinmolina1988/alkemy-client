@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto:wght@300&family=Rubik:ital,wght@0,600;1,400&display=swap');
+
+.nav {
+
+    position: fixed;
+    z-index: 4000;
+    top: 0;
+    background: transparent;
+    width: 100%;
+    transition: 500ms linear;
+
+    .n-desktop {
+        display: flex;
+        justify-content: space-evenly;
+
+        .botones {
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            justify-content: space-evenly;
+            .boton {
+                font-weight: bold;
+                background-color: transparent;
+                color: white;
+                padding: 5px;
+                border: none;
+                transition: 0.5s;
+                text-shadow: 1px 1px 1px #000000;
+
+
+                &:hover {
+                    cursor: pointer;
+                    font-size: 20px;
+                    transition: 0.5s;
+                }
+
+                &__not-scroll {
+                    margin-top: 40px;
+                }
+
+                &__scroll {
+                    padding: 20px;
+
+                    &:hover {
+                        border-bottom: 2px solid white;
+                    }
+                }
+
+                &__entrar {
+                    padding: 10px;
+                    border-radius: 15px;
+                    background-color: rgb(35, 195, 141);
+                }
+            }
+        }
+
+    }
+
+    &__not-scroll {
+        height: 100px;
+        background: #52C0F7;
+    }
+
+    &__scroll {
+        height: 60px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .logo {
+        margin: 10px;
+        width: 50px;
+    }
+
+    .span {
+        z-index: 60000;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: end;
+        margin: 30px;
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+
+
+        &__scroll {
+            margin-top: 18px;
+
+
+        }
+    }
+}
